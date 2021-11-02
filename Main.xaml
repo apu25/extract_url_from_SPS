@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="extract_url___update_PQ_file__submit_ASN" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="643.2,925.6" sap2010:WorkflowViewState.IdRef="extract_url___update_PQ_file__submit_ASN_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="extract_url___update_PQ_file__submit_ASN" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="991.2,925.6" sap2010:WorkflowViewState.IdRef="extract_url___update_PQ_file__submit_ASN_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -241,7 +241,7 @@
           <av:PointCollection x:Key="ConnectorLocation">270,156.4 270,163.6</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Url_SPS_login" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="urlTransactionsSPS" DisplayName="Asset - urlTransactionsSPS" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
         <ui:GetRobotAsset.Value>
           <OutArgument x:TypeArguments="x:String">[strUrlSPSLogin]</OutArgument>
         </ui:GetRobotAsset.Value>
@@ -255,7 +255,7 @@
               <av:PointCollection x:Key="ConnectorLocation">270,216.4 270,226.4</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="rootFolder_SPS_saved_search" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5">
+          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="rootFolder_SPS_saved_search" DisplayName="Asset rootFolder_SPS_saved_search" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5">
             <ui:GetRobotAsset.Value>
               <OutArgument x:TypeArguments="x:String">[strRootFolderSavedSearch]</OutArgument>
             </ui:GetRobotAsset.Value>
@@ -281,14 +281,14 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="241.6,302.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="844,6571.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NCheckState Exists="{x:Null}" DisplayName="Check 'Sign in to your account'" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Timeout="5" Version="V1">
+                      <uix:NCheckState Exists="{x:Null}" DisplayName="Check 'Sign in to your account'" sap:VirtualizedContainerService.HintSize="802.4,1605.6" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Timeout="5" Version="V1">
                         <uix:NCheckState.IfExists>
                           <Sequence DisplayName="Sign in appears" sap:VirtualizedContainerService.HintSize="484.8,1387.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
                             <Sequence.Variables>
@@ -392,7 +392,7 @@
                             </uix:NClick>
                             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="443.2,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_27">
                               <ui:CommentOut.Body>
-                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="635.2,643.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="635.2,675.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -482,12 +482,12 @@
                         </uix:NCheckState.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <Sequence DisplayName="Extract saved search in SPS" sap:VirtualizedContainerService.HintSize="802.4,4706.4" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                      <Sequence DisplayName="Extract saved search in SPS" sap:VirtualizedContainerService.HintSize="802.4,4708" sap2010:WorkflowViewState.IdRef="Sequence_48">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="all_children" />
                           <Variable x:TypeArguments="x:String" Name="str_children_text" />
@@ -501,8 +501,8 @@
                         </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <Sequence DisplayName="Get list of saved search directly" sap:VirtualizedContainerService.HintSize="760.8,908" sap2010:WorkflowViewState.IdRef="Sequence_38">
@@ -605,7 +605,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InputDialog>
-                        <ui:Replace BuilderPattern="[せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" DisplayName="Replace special character and blank" sap:VirtualizedContainerService.HintSize="760.8,60" sap2010:WorkflowViewState.IdRef="Replace_4" Input="[strSelectedSavedSearch]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ONEOF&quot;,&quot;OperationName&quot;:&quot;One of&quot;,&quot;OperationValue&quot;:&quot;せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ &quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" RegexOption="IgnoreCase, Compiled" Result="[strSelectedSavedSearch]">
+                        <ui:Replace BuilderPattern="[䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" DisplayName="Replace special character and blank" sap:VirtualizedContainerService.HintSize="760.8,60" sap2010:WorkflowViewState.IdRef="Replace_4" Input="[strSelectedSavedSearch]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ONEOF&quot;,&quot;OperationName&quot;:&quot;One of&quot;,&quot;OperationValue&quot;:&quot;䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ &quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" RegexOption="IgnoreCase, Compiled" Result="[strSelectedSavedSearch]">
                           <ui:Replace.Replacement>
                             <InArgument x:TypeArguments="x:String">
                               <Literal x:TypeArguments="x:String" Value="" />
@@ -697,7 +697,7 @@
                             </If.Else>
                           </If>
                         </Sequence>
-                        <Sequence DisplayName="Extract selected saved search" sap:VirtualizedContainerService.HintSize="760.8,2386.4" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                        <Sequence DisplayName="Extract selected saved search" sap:VirtualizedContainerService.HintSize="760.8,2388" sap2010:WorkflowViewState.IdRef="Sequence_47">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -814,7 +814,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NCheckState>
-                          <Sequence DisplayName="Extract results" sap:VirtualizedContainerService.HintSize="719.2,1153.6" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                          <Sequence DisplayName="Extract results" sap:VirtualizedContainerService.HintSize="719.2,1155.2" sap2010:WorkflowViewState.IdRef="Sequence_46">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="sd:DataTable" Name="DT_saved_search" />
                             </Sequence.Variables>
@@ -924,7 +924,7 @@
                           </Sequence>
                         </Sequence>
                       </Sequence>
-                      <Sequence DisplayName="Log out" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                      <Sequence DisplayName="Log out" sap:VirtualizedContainerService.HintSize="802.4,22.4" sap2010:WorkflowViewState.IdRef="Sequence_53">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -991,9 +991,9 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
                       </Sequence>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_30">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="802.4,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_30">
                         <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,240" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,240" sap2010:WorkflowViewState.IdRef="Sequence_54">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
