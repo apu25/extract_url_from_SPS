@@ -181,7 +181,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Submit Invoice.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Backup\Submit Invoice.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
@@ -281,14 +281,14 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="844,6571.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1893.6,6571.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NCheckState Exists="{x:Null}" DisplayName="Check 'Sign in to your account'" sap:VirtualizedContainerService.HintSize="802.4,1605.6" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Timeout="5" Version="V1">
+                      <uix:NCheckState Exists="{x:Null}" DisplayName="Check 'Sign in to your account'" sap:VirtualizedContainerService.HintSize="1852,1605.6" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Timeout="5" Version="V1">
                         <uix:NCheckState.IfExists>
                           <Sequence DisplayName="Sign in appears" sap:VirtualizedContainerService.HintSize="484.8,1387.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
                             <Sequence.Variables>
@@ -487,7 +487,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <Sequence DisplayName="Extract saved search in SPS" sap:VirtualizedContainerService.HintSize="802.4,4708" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                      <Sequence DisplayName="Extract saved search in SPS" sap:VirtualizedContainerService.HintSize="1852,4708" sap2010:WorkflowViewState.IdRef="Sequence_48">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="all_children" />
                           <Variable x:TypeArguments="x:String" Name="str_children_text" />
@@ -505,7 +505,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="Get list of saved search directly" sap:VirtualizedContainerService.HintSize="760.8,908" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                        <Sequence DisplayName="Get list of saved search directly" sap:VirtualizedContainerService.HintSize="1810.4,908" sap2010:WorkflowViewState.IdRef="Sequence_38">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -594,7 +594,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ForEach>
                         </Sequence>
-                        <ui:InputDialog OptionsString="{x:Null}" DisplayName="Select saved search" sap:VirtualizedContainerService.HintSize="760.8,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="List of Saved Search" Options="[arr_str_Test]" Title="Choose saved search in SPS">
+                        <ui:InputDialog OptionsString="{x:Null}" DisplayName="Select saved search" sap:VirtualizedContainerService.HintSize="1810.4,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="List of Saved Search" Options="[arr_str_Test]" Title="Choose saved search in SPS">
                           <ui:InputDialog.Result>
                             <OutArgument x:TypeArguments="x:String">[strSelectedSavedSearch]</OutArgument>
                           </ui:InputDialog.Result>
@@ -605,7 +605,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InputDialog>
-                        <ui:Replace BuilderPattern="[䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" DisplayName="Replace special character and blank" sap:VirtualizedContainerService.HintSize="760.8,60" sap2010:WorkflowViewState.IdRef="Replace_4" Input="[strSelectedSavedSearch]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ONEOF&quot;,&quot;OperationName&quot;:&quot;One of&quot;,&quot;OperationValue&quot;:&quot;䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ &quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" RegexOption="IgnoreCase, Compiled" Result="[strSelectedSavedSearch]">
+                        <ui:Replace BuilderPattern="[䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" DisplayName="Replace special character and blank" sap:VirtualizedContainerService.HintSize="1810.4,60" sap2010:WorkflowViewState.IdRef="Replace_4" Input="[strSelectedSavedSearch]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ONEOF&quot;,&quot;OperationName&quot;:&quot;One of&quot;,&quot;OperationValue&quot;:&quot;䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ &quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[䐹䙄䔹せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" RegexOption="IgnoreCase, Compiled" Result="[strSelectedSavedSearch]">
                           <ui:Replace.Replacement>
                             <InArgument x:TypeArguments="x:String">
                               <Literal x:TypeArguments="x:String" Value="" />
@@ -618,14 +618,14 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:Replace>
-                        <Sequence DisplayName="Create sub folder" sap:VirtualizedContainerService.HintSize="760.8,804" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                        <Sequence DisplayName="Create sub folder" sap:VirtualizedContainerService.HintSize="1810.4,804" sap2010:WorkflowViewState.IdRef="Sequence_41">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="619.2,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1768.8,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                             <ui:MultipleAssign.AssignOperations>
                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -661,7 +661,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:MultipleAssign>
-                          <ui:FolderExistsX DisplayName="If folder of saved search exists" Exists="[B_exist_folder_saved_search]" sap:VirtualizedContainerService.HintSize="619.2,134.4" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[strFolderSavedSearch]">
+                          <ui:FolderExistsX DisplayName="If folder of saved search exists" Exists="[B_exist_folder_saved_search]" sap:VirtualizedContainerService.HintSize="1768.8,134.4" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[strFolderSavedSearch]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -669,7 +669,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:FolderExistsX>
-                          <If Condition="[B_exist_folder_saved_search]" DisplayName="Create folder of saved search" sap:VirtualizedContainerService.HintSize="619.2,332.8" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If Condition="[B_exist_folder_saved_search]" DisplayName="Create folder of saved search" sap:VirtualizedContainerService.HintSize="1768.8,332.8" sap2010:WorkflowViewState.IdRef="If_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -677,7 +677,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                              <Sequence sap:VirtualizedContainerService.HintSize="862.4,84.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -686,18 +686,18 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence sap:VirtualizedContainerService.HintSize="375.2,173.6" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                              <Sequence sap:VirtualizedContainerService.HintSize="862.4,173.6" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[strFolderSavedSearch]" />
+                                <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="820.8,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[strFolderSavedSearch]" />
                               </Sequence>
                             </If.Else>
                           </If>
                         </Sequence>
-                        <Sequence DisplayName="Extract selected saved search" sap:VirtualizedContainerService.HintSize="760.8,2388" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                        <Sequence DisplayName="Extract selected saved search" sap:VirtualizedContainerService.HintSize="1810.4,2388" sap2010:WorkflowViewState.IdRef="Sequence_47">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1010,7 +1010,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:InvokeWorkflowFile>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Submit Invoice.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Backup\Submit Invoice.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
                                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
                               </ui:InvokeWorkflowFile.Arguments>
