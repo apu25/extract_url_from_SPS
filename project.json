@@ -5,7 +5,7 @@
   "dependencies": {
     "UiPath.Credentials.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.11.4]",
-    "UiPath.Mail.Activities": "[1.12.2]",
+    "UiPath.Mail.Activities": "[1.12.3]",
     "UiPath.System.Activities": "[21.10.2]",
     "UiPath.Terminal.Activities": "[2.3.0]",
     "UiPath.UIAutomation.Activities": "[21.11.0-preview]"
@@ -46,14 +46,14 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Extract  SO url to csv file in SPS.xaml",
-      "uniqueId": "c3060221-e576-431a-b860-52312560d8e7",
+      "filePath": "Main.xaml",
+      "uniqueId": "d97411b2-d94d-4525-8d68-e992663c0f24",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "d97411b2-d94d-4525-8d68-e992663c0f24",
+      "filePath": "Backup\\Extract  SO url to csv file in SPS.xaml",
+      "uniqueId": "05bcb5b2-b702-453b-988d-e851aae69568",
       "input": [],
       "output": []
     }
