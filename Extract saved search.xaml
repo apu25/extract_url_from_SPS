@@ -94,20 +94,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="SPS Commerce" sap:VirtualizedContainerService.HintSize="588.8,1605.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="SPS Commerce" sap:VirtualizedContainerService.HintSize="588.8,1669.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,1388.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,1452.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Extract saved search in SPS" sap:VirtualizedContainerService.HintSize="513.6,1169.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <Sequence DisplayName="Extract saved search in SPS" sap:VirtualizedContainerService.HintSize="513.6,1171.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
               <Sequence.Variables>
                 <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="all_children" />
                 <Variable x:TypeArguments="x:String" Name="str_children_text" />
@@ -238,7 +238,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Replace>
-              <Sequence DisplayName="Create sub folder" sap:VirtualizedContainerService.HintSize="472,382.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="Create sub folder" sap:VirtualizedContainerService.HintSize="472,383.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -317,7 +317,7 @@
                   </If.Else>
                 </If>
               </Sequence>
-              <Sequence DisplayName="Extract selected saved search" sap:VirtualizedContainerService.HintSize="472,428" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <Sequence DisplayName="Extract selected saved search" sap:VirtualizedContainerService.HintSize="472,428.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -341,7 +341,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NClick ClickType="Single" DelayAfter="1" DisplayName="Click 'List View'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1">
+                <uix:NClick ClickType="Single" DelayAfter="1" DisplayName="Click 'List View'" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/54573bdbda15ca9953b16bb98789a8ed79c3e4ca/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzNjkyOTcxNiwiZXhwIjoxNjM2OTcyOTE2LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.wPDdknM8YSAsqXoEISLSkflKHjx8tbduBiSGL1ZOtcLKSy5BBWxW0OQ668JNkmk3a04-N8p9s4Awrmwsbn-i6ge_nLL3py5C20w7PdYf6bofkCj2hKg9v48Mp6RyMd210q6bxI3ZE1p5tOCrKqBxdmsmO_PYJimJ7JYA8_zo2jfasD8ZIS8pXjqROtpEm5NAYUe7MRCJGtizVTcHq5dk8j3QQhVblNJTnuQxjmWYiD588lpdPx2EeS2ZmX2hHEYftxQGciiNqUrKTe-m3KMNfvJSBz19CNFqYtNimvggy-4VD-XhYbbDqLhqf57m3nkcAAL_7v6GTGwqGhhXi5YCLw&amp;lang=en-US#/transactions/list/" DesignTimeRectangle="1480, 355, 62, 22" ElementType="Text" FriendlyName="'List View'" FullSelectorArgument="&lt;webctrl name='app-fulfillment-4z08t6' tag='IFRAME' /&gt;&lt;webctrl aaname='List View' parentid='switch-transaction-view-dropdown' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aaname='List View' parentid='switch-transaction-view-dropdown' tag='SPAN' type='' check:text='List View' /&gt;" Guid="a9e4be56-570c-48a3-86dd-d40e1bd086f3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAaCAYAAAADiYpyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHbSURBVFhH7ZO7SgRBEEX9WCNBE1EDRUMTA0MTEQMRBBEUHyCIgYiBoF+gfoEauWHLGequtW3tOvtABOtAMzvd1dVVZ3qnStKQIowUYaQII0UYKcJIEUaKMFKE0RXx0emU9Y3NsriyVl7f3m32C63Pzi+Vp+cXmx2d49PzMj0z1zw99Tn94iZNaxHMsdZWhOK3tndsphdykIszOVtoXvt4/ikRw/KTiH7n6QbcPzzazO8w9F/Dr6tZCmfottCE5jQiIVHTxPlbF8XU5yq3avT7o5sX5RxZRBRP4pOzi+Z3fcUj6hg1OKjofnv0TpyP17uvk1j/DhMV4Wkjgn3sV+PaQ/OiFhE14efqc3mqTnKobp0pxvpryHZtHNqIANaJI56m9Vt4EapBZ/qh832jvPM8ODxqnuSKZMNYIgTNqCB9ubYiJJMnsXX+SES/GoXkXl5dl4Xl1aYW5th7c3vXU6eYiAhQ48QQ21YEucip3HW8FwGsR414WCOGWNXLHL939/bDHsYSQVIaBjWuK+cbZO8g1FzUYC1C5/g6yO9rVgz76g/j5zzfRKggPyhC6ypA1v2ov6aPGSREzUYfoRYBkqzcDH+270UfJprzdEX8d1KEkSKMFGGkCCNFNJTyCb5PNJ7cKF+EAAAAAElFTkSuQmCC" InformativeScreenshot="a1dd58eb77b33cb342bbac57cbc35c82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="FuzzySelector">
                       <uix:TargetAnchorable.Anchors>
@@ -646,9 +646,10 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
             </Sequence>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="513.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="513.6,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_3">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,240" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,240" sap2010:WorkflowViewState.IdRef="Sequence_24">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
