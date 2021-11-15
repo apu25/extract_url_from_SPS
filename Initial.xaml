@@ -141,7 +141,7 @@
         </ui:GetRobotAsset.Value>
       </ui:GetRobotAsset>
     </Sequence>
-    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Login SPS Commerce" sap:VirtualizedContainerService.HintSize="752.8,1360.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Login SPS Commerce" sap:VirtualizedContainerService.HintSize="752.8,1360.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
