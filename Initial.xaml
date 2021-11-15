@@ -87,8 +87,8 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Initial" sap:VirtualizedContainerService.HintSize="794.4,2263.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="strPWD" />
       <Variable x:TypeArguments="x:String" Name="strAccount" />
+      <Variable x:TypeArguments="x:String" Name="strPWD" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -141,16 +141,13 @@
         </ui:GetRobotAsset.Value>
       </ui:GetRobotAsset>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Login SPS Commerce" sap:VirtualizedContainerService.HintSize="752.8,1360.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1">
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Login SPS Commerce" sap:VirtualizedContainerService.HintSize="752.8,1360.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
           <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="719.2,1144" sap2010:WorkflowViewState.IdRef="Sequence_26">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="strAccount" />
-            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -160,10 +157,6 @@
             <uix:NCheckState Exists="{x:Null}" DisplayName="Check 'Sign in to your account'" sap:VirtualizedContainerService.HintSize="677.6,1049.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Timeout="5" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Sign in appears" sap:VirtualizedContainerService.HintSize="375.2,831.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                  <Sequence.Variables>
-                    <Variable x:TypeArguments="x:String" Name="strAccount" />
-                    <Variable x:TypeArguments="x:String" Name="strPWD" />
-                  </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
